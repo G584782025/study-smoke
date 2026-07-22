@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>かんたんな入力フォーム</title>
-    <script src="input-demo.js" defer></script>
+    <meta charset="UTF-8">
+    <title>タバコ当てゲーム</title>
   </head>
 
   <body>
-    <h1>かんたんな入力フォーム</h1>
-	<p>氏名を記入するテキストボックスが表示されます．</p>
-	<p>表示ボタンは最初動作しませんが，あとでプログラムを読み込ませると動作するようになります．</p>
-	<label for="shimei">氏名: </label>
-	<input type="text" name="shimei" size="10" id="shimei">
-	<button id="print">表示</button>
-	<p id="message">メッセージ</p>
+    <h1>現在売られているタバコを選ぼう!
+    </h1>
+	<p>次から選択</p>
+			<div class="right">
+			<p>
+				<input type="checkbox" name="hobby" value="manga">
+				<label for="manga">TEREA メンソール　　</label>
+				<input type="checkbox" name="hobby" value="anime">
+				<label for="anime">SENTIA フロストグリーン　　</label>
+				<input type="checkbox" name="hobby" value="game">
+				<label for="game">ECHO　　</label>
+        <input type="checkbox" name="hobby" value="game">
+				<label for="game">Peace スーパーライト</label>
+
+        <br><input type="checkbox" name="hobby" value="game">
+				<label for="game"></label>
+        <input type="checkbox" name="hobby" value="game">
+				<label for="game"></label>
+        <input type="checkbox" name="hobby" value="game">
+				<label for="game"></label>
+        <input type="checkbox" name="hobby" value="game">
+				<label for="game"></label>
+			</p>
+			<button name="hobby" class="multichoice">答える</button>
+			<span id="val_hobby"></span>
+		</div>
   </body>
 </html>
